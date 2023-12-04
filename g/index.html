@@ -20,10 +20,10 @@
   <body>
     <iframe src="https://whr1.000webhostapp.com/g" id="mainFrame"></iframe>
     <script>
-      if(location.href.indexOf('i=')!=-1){
-        src = location.href.split('i=')[1].split('&')[0]
+      if(location.href.indexOf('?')!=-1){
+        pathname = location.href.split('?')[1]
         el = document.querySelector('#mainFrame')
-        el.src = 'https://whr1.000webhostapp.com/g/' + src 
+        el.src = 'https://whr1.000webhostapp.com/g/?' + pathname
       }
     </script>
   </body>
