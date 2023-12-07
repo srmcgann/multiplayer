@@ -1,31 +1,36 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
-    <style>
-      body, html{
-        margin: 0;
-        background: #000;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-      }
-      iframe{
-        border: 0;
-        margin: 0;
-        width: 100vw;
-        height: 100vh;
-      }
-    </style>
+    html, body{
+      margin: 0;
+      min-width: 100vw;
+      min-height: 100vh;
+      background: #000;
+    }
+    iframe{
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
   </head>
   <body>
-    <iframe src="https://warpspeed.000webhostapp.com/" id="mainFrame"></iframe>
+    <iframe id="mainFrame"></iframe>
     <script>
-      if(location.href.indexOf('?')!=-1){
-        pathname = location.href.split('?')[1]
-        el = document.querySelector('#mainFrame')
-        el.src = 'https://warpspeed.000webhostapp.com/?' + pathname
-      }
-    </script>
+      list = [        'efx2.000webhostapp.com',
+        'efx3.000webhostapp.com',
+        'fishable-searches.000webhostapp.com',
+        'orbs2.000webhostapp.com',
+        'orbs3.000webhostapp.com',
+        'orbs4.000webhostapp.com',
+        'warpspeed.000webhostapp.com'
+      ]
+      
+      frame = document.querySelector('#mainFrame')
+      frame.src = list[Math.random()*list.length|0]
     </script>
   </body>
 </html>
