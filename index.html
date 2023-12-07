@@ -1,36 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    html, body{
-      margin: 0;
-      min-width: 100vw;
-      min-height: 100vh;
-      background: #000;
-    }
-    iframe{
-      border: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin: 0;
-      width: 100%;
-      height: 100%;
-    }
   </head>
   <body>
-    <iframe id="mainFrame"></iframe>
     <script>
-      list = [        'efx2.000webhostapp.com',
-        'efx3.000webhostapp.com',
-        'fishable-searches.000webhostapp.com',
-        'orbs2.000webhostapp.com',
-        'orbs3.000webhostapp.com',
-        'orbs4.000webhostapp.com',
-        'warpspeed.000webhostapp.com'
-      ]
-      
-      frame = document.querySelector('#mainFrame')
-      frame.src = list[Math.random()*list.length|0]
+      tgts = 7
+      location.href = Math.random()*tgts|0
     </script>
   </body>
 </html>
