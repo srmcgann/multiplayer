@@ -24,7 +24,11 @@
       pathname = location.href.split('?')
       pathname = typeof pathname[1] != 'undefined' && pathname.length ? '/?' + pathname[1] : ''
       el = document.querySelector('#mainFrame')
-      location.href = (Math.random()*6+9|0)+'/' + pathname
+      var val
+      do{
+        val = Math.random() * 15 | 0
+      }while(val > 8 && val != 11);  // whr.66ghz.com is out of order!
+      location.href = val +'/' + pathname
     </script>
     </script>
   </body>
