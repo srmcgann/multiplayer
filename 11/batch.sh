@@ -1,5 +1,5 @@
 #!/bin/bash
-./setDomainBatch.sh whr.66ghz.com 0
+./setDomainBatch.sh whr.gamer.gd 0
 ./setDomainBatch.sh orbs2.000webhostapp.com 1
 ./setDomainBatch.sh orbs3.000webhostapp.com 2
 ./setDomainBatch.sh orbs4.000webhostapp.com 3
@@ -10,5 +10,5 @@
 ./setDomainBatch.sh gummier-fish.000webhostapp.com 8
 ./setDomainBatch.sh whr.rf.gd 9
 ./setDomainBatch.sh whr.42web.io 10
-./setDomainBatch.sh whr.66ghz.com 11
+./setDomainBatch.sh whr.gamer.gd 11
 ./setDomainBatch.sh orb.42web.io 12

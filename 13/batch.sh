@@ -10,5 +10,5 @@
 ./setDomainBatch.sh gummier-fish.000webhostapp.com 8
 ./setDomainBatch.sh whr.rf.gd 9
 ./setDomainBatch.sh whr.42web.io 10
-./setDomainBatch.sh whr.66ghz.com 11
+./setDomainBatch.sh whr.gamer.gd 11
 ./setDomainBatch.sh efx.rf.gd 12
